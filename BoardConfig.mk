@@ -1,0 +1,28 @@
+USE_CAMERA_STUB := true
+
+# inherit from the proprietary version
+-include vendor/lge/c660/BoardConfigVendor.mk
+
+TARGET_NO_BOOTLOADER := true
+TARGET_BOARD_PLATFORM := msm7k
+TARGET_CPU_ABI := armeabi
+TARGET_BOOTLOADER_BOARD_NAME := c660
+
+BOARD_KERNEL_CMDLINE := mem=215M console=ttyMSM2,115200n8 androidboot.hardware=muscat
+BOARD_KERNEL_BASE := 0x02800000
+BOARD_KERNEL_PAGESIZE := 2048
+
+# fix this up by examining /proc/mtd on a running device
+BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00440000
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00500000
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x0cd00000
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x0b280000
+BOARD_FLASH_BLOCK_SIZE := 131072
+
+TARGET_PREBUILT_KERNEL := device/lge/c660/kernel
+
+
+BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_LDPI_RECOVERY := true
+BOARD_HAS_JANKY_BACKBUFFER := true
+BOARD_CUSTOM_GRAPHICS           := ../../../device/lge/c660/recovery/graphics.c
