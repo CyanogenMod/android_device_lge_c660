@@ -17,7 +17,25 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+# Board-specific init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.muscat.rc:root/init.muscat.rc \
+    $(LOCAL_PATH)/ueventd.muscat.rc:root/ueventd.muscat.rc
+
+# BT startup
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/init.qcom.bt.sh:system/bin/init.qcom.bt.sh
+
+# configs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/AudioFilter.csv:system/etc/AudioFilter.csv
+
 $(call inherit-product, build/target/product/full.mk)
+
+PRODUCT_PACKAGES += \
+    gralloc.c660 \
+    gps.c660 \
+    libOmxCore
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := c660
