@@ -36,6 +36,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko
 
+# Keyboard layout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/kbd_pp2106.kl:system/usr/keylayout/kbd_pp2106.kl \
+    $(LOCAL_PATH)/configs/kbd_pp2106.kcm.bin:system/usr/keychars/kbd_pp2106.kcm.bin
+
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_PACKAGES += \
