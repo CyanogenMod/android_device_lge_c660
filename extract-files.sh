@@ -20,6 +20,7 @@ DEVICE=c660
 rm -rf ../../../vendor/$VENDOR/$DEVICE
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/flex
+mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wl
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/egl
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/hw
 
@@ -107,3 +108,7 @@ adb pull /system/lib/libdivxdrmdecrypt.so ../../../vendor/$VENDOR/$DEVICE/propri
 
 ## BT
 adb pull /system/etc/firmware/BCM43291A0_003.001.013.0141.0153.hcd ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware/
+
+## Wifi
+adb pull /system/etc/wl/rtecdc-apsta.bin ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware/
+adb pull /system/etc/wl/rtecdc.bin ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/firmware/
