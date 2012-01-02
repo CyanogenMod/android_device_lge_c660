@@ -41,6 +41,22 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/kbd_pp2106.kl:system/usr/keylayout/kbd_pp2106.kl \
     $(LOCAL_PATH)/configs/kbd_pp2106.kcm.bin:system/usr/keychars/kbd_pp2106.kcm.bin
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/chargemode/chargerlogo:root/sbin/chargerlogo \
+    $(LOCAL_PATH)/chargemode/images/battery_ani_01.rle:root/chargerimages/battery_ani_01.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_ani_02.rle:root/chargerimages/battery_ani_02.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_bg_bk.rle:root/chargerimages/battery_bg_bk.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_bg.rle:root/chargerimages/battery_bg.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_charging_01.rle:root/chargerimages/battery_charging_01.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_charging_02.rle:root/chargerimages/battery_charging_02.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_charging_03.rle:root/chargerimages/battery_charging_03.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_charging_04.rle:root/chargerimages/battery_charging_04.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_charging_05.rle:root/chargerimages/battery_charging_05.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_charging_06.rle:root/chargerimages/battery_charging_06.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_wait_ani_01.rle:root/chargerimages/battery_wait_ani_01.rle \
+    $(LOCAL_PATH)/chargemode/images/battery_wait_ani_02.rle:root/chargerimages/battery_wait_ani_02.rle \
+    $(LOCAL_PATH)/chargemode/images/black_bg.rle:root/chargerimages/black_bg.rle
+
 # Permission files
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \

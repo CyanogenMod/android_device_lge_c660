@@ -1,3 +1,6 @@
+on boot-pause
+    exec sbin/chargerlogo
+
 on boot
     mkdir /data/amit 0777 ami304d ami304d
     chmod 0666 /data/amit/AMI306_Config.ini
