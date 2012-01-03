@@ -1,4 +1,5 @@
 on boot-pause
+    insmod /system/lib/modules/fbconsole.ko
     exec sbin/chargerlogo
 
 on boot

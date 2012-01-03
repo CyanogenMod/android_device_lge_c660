@@ -42,6 +42,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/kbd_pp2106.kcm.bin:system/usr/keychars/kbd_pp2106.kcm.bin
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/fbconsole.ko:system/lib/modules/fbconsole.ko \
     $(LOCAL_PATH)/chargemode/chargerlogo:root/sbin/chargerlogo \
     $(LOCAL_PATH)/chargemode/images/battery_ani_01.rle:root/chargerimages/battery_ani_01.rle \
     $(LOCAL_PATH)/chargemode/images/battery_ani_02.rle:root/chargerimages/battery_ani_02.rle \
