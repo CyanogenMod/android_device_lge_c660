@@ -1,5 +1,6 @@
 on boot-pause
     insmod /system/lib/modules/fbconsole.ko
+    start adbd
     exec sbin/chargerlogo
 
 on boot
@@ -59,3 +60,6 @@ service wpa_supplicant /system/bin/wpa_supplicant -Dwext -iwlan0 -c/data/misc/wi
 
 on property:dev.bootcomplete=1
     exec /system/bin/hwaddrs
+
+service adbd /sbin/adbd
+    disabled
