@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
 
 # configs
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/configs/AudioFilter.csv:system/etc/AudioFilter.csv
 
 # WiFi
