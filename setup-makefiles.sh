@@ -112,7 +112,6 @@ PRODUCT_COPY_FILES += \\
 
 ## HAL
 PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/lib/hw/copybit.msm7k.so:system/lib/hw/copybit.msm7k.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.msm7k.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/hw/sensors.muscat.so:system/lib/hw/sensors.muscat.so
 
