@@ -77,7 +77,8 @@ PRODUCT_PACKAGES += \
     gps.c660 \
     hwaddrs \
     copybit.msm7k \
-    libOmxCore
+    libOmxCore \
+    lgapversion
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := c660
